@@ -1,52 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dissertation Project | Zheng ZHOU</title>
   <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css">
   <style>
-    body { font-family: 'Segoe UI', Arial, sans-serif; background: #f5f6f8; color: #222; margin: 0;}
-    .container { max-width: 830px; margin: 42px auto 32px auto; background: #fff; border-radius: 18px;
-      box-shadow: 0 4px 26px 0 rgba(40,52,86,.10), 0 1.5px 4px 0 rgba(60,60,60,.07);
-      padding: 40px 36px 38px 36px;}
-    .topnav { display: flex; justify-content: flex-end; gap: 32px; background: #fff;
-      padding: 10px 12px 8px 12px; border-radius: 12px; margin-bottom: 28px; font-size: 1.13em; }
-    .topnav a { color: #222; text-decoration: none; font-weight: 500; padding-bottom: 3px;}
-    .topnav a.active, .topnav a:hover { border-bottom: 2.5px solid #7165cf;}
-    .avatar-wrap { display: flex; justify-content: center; align-items: flex-end; margin-bottom: 10px;}
-    .avatar { border-radius: 50%; width: 123px; height: 123px; object-fit: cover; margin-top: 6px; border: 4px solid #f5f6f8;}
-    .name { text-align: center; font-size: 2.1em; font-weight: 700; margin-bottom: 0px; margin-top: 3px;}
-    .profile-title { text-align: center; font-size: 1.14em; color: #555; margin-bottom: 11px;}
-    .main-title { font-size: 2em; margin: 38px 0 12px 0; font-weight: 700;}
-    .desc { border-left: 6px solid #2767b0; background: #f8f9fb; padding: 18px 24px 16px 18px; margin-bottom: 30px; font-size: 1.13em; text-align: justify;}
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0; background: #fafbfc; color: #232323; min-height: 100vh;
+    }
+    .nav {
+      width: 100%; background: #fff; box-shadow: 0 1.5px 8px 0 rgba(40,52,86,.03);
+      padding: 0 0 0 0; display: flex; align-items: center; height: 66px; font-size: 1.19em;
+      margin-bottom: 10px; position: sticky; top: 0; z-index: 10;
+    }
+    .nav-inner {
+      width: 100%; max-width: 1120px; margin: 0 auto; display: flex; align-items: center; justify-content: flex-end; height: 100%;
+    }
+    .nav-link {
+      color: #222; text-decoration: none; margin-left: 40px; font-weight: 500; display: flex; align-items: center; gap: 6px; padding-bottom: 2px;
+      transition: color 0.18s;
+    }
+    .nav-link.active {
+      color: #231eb2; border-bottom: 3px solid #7767d6;
+      font-weight: 700;
+    }
+    .nav-link i { font-size: 1.13em; }
+    .main-container {
+      max-width: 900px; margin: 0 auto 42px auto; background: #fff; border-radius: 18px;
+      box-shadow: 0 4px 22px 0 rgba(40,52,86,.08), 0 1.5px 8px 0 rgba(60,60,60,.03);
+      padding: 48px 38px 38px 38px;
+    }
+    .dis-title {
+      font-size: 2.35em;
+      font-weight: 800;
+      margin-bottom: 28px;
+      margin-top: 8px;
+      line-height: 1.18;
+      letter-spacing: .2px;
+      color: #181a1c;
+    }
+    .statement-section {
+      background: #f5f6f8; border-radius: 10px; padding: 20px 27px 18px 27px; margin-bottom: 35px; position: relative;
+      border-left: 6px solid #205ec4;
+      margin-top: 3px;
+    }
+    .statement-content {
+      font-size: 1.12em; color: #232325; text-align: justify; line-height: 1.8;
+    }
+    .section-title {
+      color: #205ec4; font-weight: 700; font-size: 1.19em; letter-spacing: .2px;
+      margin-top: 29px; margin-bottom: 7px;
+    }
+    .info-list {
+      margin: 0 0 8px 0; padding-left: 21px; font-size: 1.08em;
+    }
+    .info-list li { margin-bottom: 7px; line-height: 1.8;}
+    .back {
+      margin-top: 37px; text-align: left;
+    }
+    .back a {
+      color: #205ec4; text-decoration: none; font-size: 1.08em; font-weight: 500;
+      transition: color 0.13s;
+    }
+    .back a:hover { color: #7854e2;}
     @media (max-width: 700px) {
-      .container {padding: 12px 2vw;}
-      .topnav {gap: 16px;}
-      .main-title { font-size: 1.1em;}
+      .main-container {padding: 13px 3vw;}
+      .dis-title {font-size: 1.32em;}
+      .statement-section {padding: 11px 7px;}
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="topnav">
-      <a href="index.html"><i class="ph ph-house"></i> Home</a>
-      <a href="research.html"><i class="ph ph-book-open"></i> Research</a>
-      <a href="dissertation.html" class="active"><i class="ph ph-graduation-cap"></i> Dissertation Project</a>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-link"><i class="ph ph-house"></i>Home</a>
+      <a href="research.html" class="nav-link"><i class="ph ph-book-open-text"></i>Research</a>
+      <a href="dissertation.html" class="nav-link active"><i class="ph ph-graduation-cap"></i>Dissertation Project</a>
     </div>
-
-    <div class="avatar-wrap">
-      <img class="avatar" src="profile.jpg.jpg" alt="Zheng ZHOU">
-    </div>
-    <div class="name">Zheng ZHOU</div>
-    <div class="profile-title">Master of Research in Political Science, Sciences Po Paris</div>
-
-    <div class="main-title">
+  </nav>
+  <div class="main-container">
+    <div class="dis-title">
       A Dragon at the Water’s Edge: Identity Anxiety and Hawkish Preferences in the Taiwan Strait
     </div>
-    <div class="desc">
-      This dissertation investigates how identity anxiety and ontological insecurity shape hawkish public preferences and risk acceptance in the context of the Taiwan Strait crisis. Building on theories of ontological security and public opinion, I use original survey experiments and comparative opinion data to examine how symbolic threats and perceived exclusion reshape collective attitudes toward national security, conflict, and cross-Strait relations.<br><br>
-      The project demonstrates that heightened identity anxiety, rooted in perceived social exclusion, amplifies support for confrontational policy and increases the willingness to accept escalation risks, providing new insight into the psychological foundations of nationalist backlash under geopolitical duress.
+
+    <div class="statement-section">
+      <div class="statement-content">
+        This dissertation investigates how identity anxiety and ontological insecurity shape hawkish public preferences and risk acceptance in the context of the Taiwan Strait crisis. Building on theories of ontological security and public opinion, I use original survey experiments and comparative opinion data to examine how symbolic threats and perceived exclusion reshape collective attitudes toward national security, conflict, and cross-Strait relations.<br><br>
+        The project demonstrates that heightened identity anxiety, rooted in perceived social exclusion, amplifies support for confrontational policy and increases the willingness to accept escalation risks, providing new insight into the psychological foundations of nationalist backlash under geopolitical duress.
+      </div>
+    </div>
+
+    <div class="section-title">Project Overview</div>
+    <ul class="info-list">
+      <li><b>Theoretical Framework:</b> Ontological Security, Identity Threat, Nationalism</li>
+      <li><b>Research Design:</b> Causal inference, survey experiments, mediation analysis, cross-national comparison</li>
+      <li><b>Data:</b> Original online surveys, framing experiments</li>
+      <li><b>Status:</b> Master’s Dissertation, Sciences Po Paris (2026)</li>
+      <li><b>Advisors:</b> Kevin Arceneaux</li>
+    </ul>
+
+    <div class="section-title">Key Findings</div>
+    <ul class="info-list">
+      <li>Identity anxiety increases support for hawkish and risk-acceptant policies under threat.</li>
+      <li>Perceived social exclusion mediates the link between symbolic threat and collective political attitudes.</li>
+      <li>Ontological (in)security is central to public opinion shifts in times of crisis escalation.</li>
+    </ul>
+
+    <div class="back">
+      <a href="index.html">&larr; Back to Home</a>
     </div>
   </div>
 </body>
