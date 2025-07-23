@@ -6,68 +6,64 @@
   <title>Zheng ZHOU | Academic Homepage</title>
   <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css">
   <style>
-    body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #f5f6f8; color: #222; min-height: 100vh; }
-    .container { max-width: 830px; margin: 40px auto 28px auto; background: #fff; border-radius: 18px;
+    body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #f5f6f8; color: #222; min-height: 100vh;}
+    .container { max-width: 830px; margin: 48px auto 30px auto; background: #fff; border-radius: 18px;
       box-shadow: 0 4px 26px 0 rgba(40,52,86,.10), 0 1.5px 4px 0 rgba(60,60,60,.07);
-      padding: 48px 38px 38px 38px;}
-    header { text-align: center; }
-    .avatar { border-radius: 50%; width: 135px; height: 135px; margin-bottom: 18px; object-fit: cover; }
-    h1 { margin: 8px 0 10px 0; font-size: 2.3em; }
-    .contact-icons { display: flex; justify-content: center; gap: 32px; margin-top: 8px; margin-bottom: 12px; }
-    .contact-icons a {
-      color: #222; display: flex; align-items: center; gap: 9px;
-      text-decoration: none; font-size: 1.12em; padding: 8px 16px 8px 12px;
-      background: #f5f6f8; border-radius: 8px; transition: background 0.18s, box-shadow 0.16s;
-      box-shadow: 0 1.5px 8px 0 rgba(40,52,86,.05); font-weight: 500;
-    }
-    .contact-icons a:hover { background: #dde9fa; color: #144e8a; box-shadow: 0 4px 16px 0 rgba(30,60,140,.10);}
-    .contact-icons i { font-size: 1.3em; }
-    .profile-title { font-size: 1.11em; color: #444; margin-bottom: 2px;}
-    .section-title { font-size: 1.17em; color: #2767b0; margin: 36px 0 8px 0; font-weight: bold;}
-    .profile-row { display: flex; flex-direction: row; justify-content: center; gap: 24px; margin-bottom: 6px;}
-    .address-label { font-weight: 600; color: #555; }
-    .address-content { font-size: 1.04em; color: #222; margin-top: 3px; }
-    .profile-subinfo {margin-bottom: 10px;}
-    .statement { border-left: 6px solid #2767b0; background: #f8f9fb; padding: 18px 32px 18px 20px;
-      margin: 16px 0 34px 0; font-size: 1.09em; text-align: justify; line-height: 1.63;}
-    .info-list { margin-bottom: 26px; padding-left: 18px; }
+      padding: 52px 40px 44px 40px;}
+    header { text-align: center;}
+    .avatar-wrap { display: flex; justify-content: center; align-items: flex-end; margin-bottom: 10px;}
+    .avatar { border-radius: 50%; width: 152px; height: 152px; object-fit: cover; margin-top: 4px; border: 5px solid #f5f6f8;}
+    h1 { margin: 12px 0 10px 0; font-size: 2.4em; letter-spacing: 1px;}
+    .profile-title { font-size: 1.16em; color: #555; margin-bottom: 18px;}
+    .contact-btns { display: flex; justify-content: center; gap: 18px; margin-bottom: 14px; }
+    .contact-btns a {
+      color: #222; display: flex; align-items: center; gap: 8px; text-decoration: none; font-size: 1.19em;
+      background: #f5f6f8; border-radius: 13px; padding: 13px 28px; font-weight: 500; box-shadow: 0 1.5px 8px 0 rgba(40,52,86,.08);
+      transition: background 0.18s, box-shadow 0.18s;}
+    .contact-btns a:hover { background: #e5eef9; color: #144e8a; box-shadow: 0 4px 18px 0 rgba(30,60,140,.08);}
+    .contact-btns i { font-size: 1.26em;}
+    .address-label { font-size: 1.09em; color: #222; font-weight: 600;}
+    .address-btn { display: inline-flex; align-items: center; gap: 7px; color: #444; background: #f5f6f8; border-radius: 9px; padding: 9px 19px; text-decoration: none; margin: 7px 0 12px 0; font-size: 1.08em; font-weight: 500;}
+    .address-btn i { font-size: 1.2em; color: #535bcf;}
+    .address-btn:hover { background: #dde9fa; color: #144e8a;}
+    .profile-subinfo {margin-bottom: 8px; font-size: 1.08em;}
+    .profile-subinfo b { font-weight: 600;}
+    .section-title { font-size: 1.19em; color: #2767b0; margin: 36px 0 12px 0; font-weight: bold;}
+    .statement { border-left: 6px solid #2767b0; background: #f8f9fb; padding: 19px 30px 18px 22px; margin: 15px 0 32px 0;
+      font-size: 1.11em; text-align: justify; line-height: 1.62;}
+    .info-list { margin-bottom: 26px; padding-left: 18px; font-size: 1.06em;}
     .info-list li { margin-bottom: 7px; }
-    .nav-btns { margin: 38px 0 0 0; text-align: center;}
+    .nav-btns { margin: 36px 0 0 0; text-align: center;}
     .nav-btns button {
       background: #e0e0e0; color: #222; font-size: 1.13em; font-weight: 600;
-      padding: 14px 38px; margin: 0 18px 0 0; border: none; border-radius: 8px; cursor: pointer; transition: background 0.22s;
-    }
-    .nav-btns button:last-child { margin-right: 0; }
-    .nav-btns button:hover { background: #b5d3f3; }
-    @media (max-width: 650px) {
-      .container {padding: 16px 4vw;}
-      .contact-icons {flex-direction: column; gap: 10px;}
-      .profile-row {flex-direction: column; gap: 2px;}
+      padding: 14px 38px; margin: 0 18px 0 0; border: none; border-radius: 8px; cursor: pointer; transition: background 0.22s;}
+    .nav-btns button:last-child { margin-right: 0;}
+    .nav-btns button:hover { background: #b5d3f3;}
+    @media (max-width: 700px) {
+      .container {padding: 12px 2vw;}
+      .contact-btns {flex-direction: column; gap: 11px;}
       .nav-btns button { padding: 11px 12vw;}
     }
-    footer { margin-top: 48px; text-align: center; color: #888; font-size: 0.97em;}
+    footer { margin-top: 46px; text-align: center; color: #888; font-size: 0.99em;}
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <img class="avatar" src="profile.jpg.jpg" alt="Zheng ZHOU">
+      <div class="avatar-wrap">
+        <img class="avatar" src="profile.jpg.jpg" alt="Zheng ZHOU">
+      </div>
       <h1>Zheng ZHOU</h1>
       <div class="profile-title">Master of Research in Political Science, Sciences Po Paris</div>
-      <div class="contact-icons">
+      <div class="contact-btns">
         <a href="mailto:zheng.zhou@sciencespo.fr" target="_blank" title="Email"><i class="ph ph-envelope"></i>Email</a>
         <a href="https://www.linkedin.com/in/zheng-zhou-8ab699302/" target="_blank" title="LinkedIn"><i class="ph ph-linkedin-logo"></i>LinkedIn</a>
         <a href="CV%20Zheng%20ZHOU.pdf" target="_blank" title="CV PDF"><i class="ph ph-file-pdf"></i>CV (PDF)</a>
       </div>
-      <div class="profile-row" style="justify-content: center;">
-        <span class="address-label"><i class="ph ph-map-pin"></i>Mailing address:</span>
-        <span class="address-content">27, rue Saint Guillaume 75337 Paris Cedex 07</span>
-      </div>
-      <div class="profile-subinfo">
-        <span style="font-weight:600;">Research Interests:</span>
-        Political psychology, nationalism and identity, far-right politics, ontological security<br>
-        <span style="font-weight:600;">Methods:</span>
-        Causal inference, survey and experimental design, formal modeling, mixed and visual analysis
+      <a href="address.html" class="address-btn"><i class="ph ph-map-pin"></i>Mailing address</a>
+      <div class="profile-subinfo" style="margin-bottom: 11px;">
+        <b>Research Interests:</b> Political psychology, nationalism and identity, far-right politics, ontological security<br>
+        <b>Methods:</b> Causal inference, survey and experimental design, formal modeling, mixed and visual analysis
       </div>
     </header>
 
