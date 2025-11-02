@@ -1,65 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="icon" type="image/svg+xml" href="svgviewer-output.svg">
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Dissertation Project | Zheng ZHOU</title>
-<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css">
-<style>
-  body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    margin: 0; background: #fafbfc; color: #232323; min-height: 100vh;
-  }
-  .nav {
-    width: 100%; background: #fff; box-shadow: 0 1.5px 8px 0 rgba(40,52,86,.03);
-    padding: 0; display: flex; align-items: center; height: 66px; font-size: 1.19em;
-    margin-bottom: 10px; position: sticky; top: 0; z-index: 10;
-  }
-  .nav-inner {
-    width: 100%; max-width: 1120px; margin: 0 auto; display: flex;
-    align-items: center; justify-content: flex-start;
-  }
-  .nav-link {
-    color: #222; text-decoration: none; margin-left: 40px; font-weight: 500;
-    display: flex; align-items: center; transition: color 0.18s;
-  }
-  .nav-link.active { color: #231eb2; border-bottom: 3px solid #7767d6; font-weight: 700; }
-  .nav-link i { font-size: 1.13em; margin-right: 6px; }
-
-  .main-container {
-    max-width: 900px; margin: 0 auto 42px auto; background: #fff; border-radius: 18px;
-    box-shadow: 0 4px 22px 0 rgba(40,52,86,.08), 0 1.5px 8px 0 rgba(60,60,60,.03);
-    padding: 48px 38px 38px 38px;
-  }
-  .dis-title {
-    font-size: 2.35em; font-weight: 800; margin-bottom: 28px; margin-top: 8px;
-    line-height: 1.18; letter-spacing: .2px; color: #181a1c;
-  }
-  .statement-section {
-    background: #f5f6f8; border-radius: 10px; padding: 20px 27px 18px 27px;
-    margin-bottom: 35px; border-left: 6px solid #205ce4; margin-top: 3px;
-  }
-  .statement-content {
-    font-size: 1.12em; color: #232325; text-align: left; line-height: 1.8;
-  }
-  .section-title {
-    color: #205ce4; font-weight: 700; font-size: 1.19em; letter-spacing: .2px;
-    margin-top: 29px; margin-bottom: 7px;
-  }
-  .info-list {
-    margin: 0 0 8px 0; padding-left: 21px; font-size: 1.08em;
-  }
-  .info-list li { margin-bottom: 7px; line-height: 1.8; }
-  .back { margin-top: 37px; text-align: left; }
-  .back a {
-    color: #205ce4; text-decoration: none; font-size: 1.08em; font-weight: 500;
-    transition: color 0.13s;
-  }
-  .back a:hover { color: #7854e2; }
-</style>
+  <link rel="icon" type="image/svg+xml" href="svgviewer-output.svg">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dissertation Project | Zheng ZHOU</title>
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0; background: #fafbfc; color: #232323; min-height: 100vh;
+    }
+    .nav {
+      width: 100%; background: #fff; box-shadow: 0 1.5px 8px 0 rgba(40,52,86,.03);
+      padding: 0 0 0 0; display: flex; align-items: center; height: 66px; font-size: 1.19em;
+      margin-bottom: 10px; position: sticky; top: 0; z-index: 10;
+    }
+    .nav-inner {
+      width: 100%; max-width: 1120px; margin: 0 auto; display: flex; align-items: center; justify-content: flex-end; height: 100%;
+    }
+    .nav-link {
+      color: #222; text-decoration: none; margin-left: 40px; font-weight: 500; display: flex; align-items: center; gap: 6px; padding-bottom: 2px;
+      transition: color 0.18s;
+    }
+    .nav-link.active {
+      color: #231eb2; border-bottom: 3px solid #7767d6;
+      font-weight: 700;
+    }
+    .nav-link i { font-size: 1.13em; }
+    .main-container {
+      max-width: 900px; margin: 0 auto 42px auto; background: #fff; border-radius: 18px;
+      box-shadow: 0 4px 22px 0 rgba(40,52,86,.08), 0 1.5px 8px 0 rgba(60,60,60,.03);
+      padding: 48px 38px 38px 38px;
+    }
+    .dis-title {
+      font-size: 2.35em;
+      font-weight: 800;
+      margin-bottom: 28px;
+      margin-top: 8px;
+      line-height: 1.18;
+      letter-spacing: .2px;
+      color: #181a1c;
+    }
+    .statement-section {
+      background: #f5f6f8; border-radius: 10px; padding: 20px 27px 18px 27px; margin-bottom: 35px; position: relative;
+      border-left: 6px solid #205ec4;
+      margin-top: 3px;
+    }
+    .statement-content {
+      font-size: 1.12em; color: #232325; text-align: left; line-height: 1.8;
+    }
+    .section-title {
+      color: #205ec4; font-weight: 700; font-size: 1.19em; letter-spacing: .2px;
+      margin-top: 29px; margin-bottom: 7px;
+    }
+    .info-list {
+      margin: 0 0 8px 0; padding-left: 21px; font-size: 1.08em;
+    }
+    .info-list li { margin-bottom: 7px; line-height: 1.8;}
+    .back {
+      margin-top: 37px; text-align: left;
+    }
+    .back a {
+      color: #205ec4; text-decoration: none; font-size: 1.08em; font-weight: 500;
+      transition: color 0.13s;
+    }
+    .back a:hover { color: #7854e2;}
+    @media (max-width: 700px) {
+      .main-container {padding: 13px 3vw;}
+      .dis-title {font-size: 1.32em;}
+      .statement-section {padding: 11px 7px;}
+    }
+  </style>
 </head>
-
 <body>
   <nav class="nav">
     <div class="nav-inner">
@@ -68,37 +81,33 @@
       <a href="dissertation.html" class="nav-link active"><i class="ph ph-graduation-cap"></i>Dissertation Project</a>
     </div>
   </nav>
-
   <div class="main-container">
-    <div class="dis-title">Fortress of the Fearful: Identity Anxiety and Institutional Security-Seeking in Taiwan</div>
+    <div class="dis-title">
+      Fortress of the Fearful: Identity Anxiety and Institutional Security-Seeking in Taiwan
+    </div>
 
     <div class="statement-section">
       <div class="statement-content">
-        This dissertation examines how <i>identity anxiety</i>—understood as ontological (in)security—reshapes citizens’ trust
-        in Taiwan’s military and civilian institutions under sustained external threat. Building theory at the intersection of
-        political psychology and institutional trust, it develops the <b>Anxiety Absorption Threshold Mechanism (AATM)</b>:
-        when oversight and integrity are weak, anxiety spills into defensive attachment; when they are strong, anxiety is
-        <i>absorbed</i> and converted into integrative, institution-based trust. Using Asian Barometer Survey Taiwan Waves 3–6
-        (2009–2023), the study tests non-linear thresholds and cross-wave dynamics to map how fear is redistributed across
-        institutions in a threatened democracy.
+        This dissertation examines how identity anxiety and perceived ontological insecurity shape citizens’ trust redistribution across military and civilian institutions in democratic Taiwan. Drawing on theories of ontological security, threat perception, and institutional trust, the project conceptualizes identity anxiety as a defensive psychological state that emerges under perceived external threat and social exclusion. Using large-scale survey data from the Asian Barometer Survey (Waves 3–6), it investigates when and how anxiety reinforces or erodes institutional confidence, especially amid intensifying cross-Strait tensions.<br><br>
+        The study develops the Anxiety Absorption Threshold Mechanism (AATM) to explain how political oversight and institutional integrity determine whether anxiety is absorbed into constructive trust or converted into defensive distrust. This mechanism provides a novel framework for understanding how democracies under geopolitical duress transform fear into institutional resilience or vulnerability.
       </div>
     </div>
 
     <div class="section-title">Project Overview</div>
     <ul class="info-list">
       <li><b>Theoretical Framework:</b> Ontological Security, Identity Anxiety, Institutional Trust, Threat Perception</li>
-      <li><b>Research Design:</b> Hierarchical models; generalized additive models (GAM) for non-linear thresholds; mediation & interaction tests; Latent Class Analysis for “security-seekers” vs “institutional integrators”</li>
-      <li><b>Data:</b> Asian Barometer Survey (Taiwan), Waves 3–6, 2009–2023</li>
+      <li><b>Research Design:</b> Hierarchical modeling, generalized additive models (GAM), mediation and interaction analysis, non-linear threshold modeling</li>
+      <li><b>Data:</b> Asian Barometer Survey Taiwan (Waves 3–6), 2009–2023</li>
       <li><b>Status:</b> Master’s Dissertation, Sciences Po Paris (2026)</li>
       <li><b>Advisors:</b> Kevin Arceneaux</li>
     </ul>
 
     <div class="section-title">Key Findings</div>
     <ul class="info-list">
-      <li><b>Negative baseline:</b> Identity anxiety generally depresses trust in the military; effects are strongest among politically aligned groups (a “vulnerability within alignment” pattern).</li>
-      <li><b>Threat is non-linear:</b> mid-level threat can buffer anxiety’s corrosive effects, but extreme threat produces a rebound that erodes trust again.</li>
-      <li><b>Oversight as absorber:</b> strong oversight and perceived integrity flip the slope—evidence of an <i>Anxiety × Oversight × Threat</i> interaction consistent with AATM.</li>
-      <li><b>Redistribution, not monotone change:</b> trust shifts across institutions; LCA shows movement from security-seekers toward institutional integrators as oversight increases.</li>
+      <li>Identity anxiety significantly decreases military trust but exhibits non-linear reversals under heightened oversight and integrity conditions.</li>
+      <li>Oversight and perceived institutional fairness act as absorbers of anxiety, converting defensive attitudes into integrative trust.</li>
+      <li>Evidence supports a redistributive pattern of trust: anxiety shifts confidence between military and civilian institutions rather than uniformly eroding it.</li>
+      <li>The Anxiety Absorption Threshold Mechanism (AATM) illuminates how democracies manage psychological insecurity under sustained external threat.</li>
     </ul>
 
     <div class="back">
